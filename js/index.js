@@ -205,7 +205,7 @@ $(document).ready(function() {
 			});
 
 		 	$('button').on( 'click', function() {
-		 		var filterValue = $(this).attr('data-filter');
+		 		 var filterValue = $(this).attr('data-filter');
 			  	$('#gallery').isotope({ filter: filterValue });
 			  	$gallery.data('lightGallery').destroy(true);
 			    $gallery.lightGallery({
