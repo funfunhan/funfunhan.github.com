@@ -59,7 +59,7 @@ header[role="banner"] #logo-main {
 
 .profile{
   height:100%;
-  min-height:120vh;
+  min-height:140vh;
   background-color: rgba(136, 136, 136, 0.36);
   border: 1px solid rgba(136, 136, 136, 0.66);
 }
