@@ -101,7 +101,7 @@
         height = window.innerHeight;
         largeHeader.style.height = 300+'px';
         canvas.width = width;
-        canvas.height = height;
+        canvas.height = 300+'px';
     }
 
     // animation
