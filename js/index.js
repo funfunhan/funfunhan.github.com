@@ -10,7 +10,7 @@
     function initHeader() {
         width = window.innerWidth;
         height = window.innerHeight;
-        target = {x: width/2, y: height/2};
+        target = {x: width/2, y: height/5};
 
         largeHeader = document.getElementById('large-header');
         largeHeader.style.height = 300+'px';
