@@ -14,7 +14,17 @@
 
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+  <div id="loader">
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+  </div>
+  <div id="myDiv" class="animate-bottom">
   <header role="banner">
     <a href="#"><img id="logo-main" src="image/MyLogo.png" width="100px"  height="50px"alt="Logo Thing main logo"></a>
   </header><!-- header role="banner" -->
@@ -134,54 +144,57 @@
       </div>
     </div>
     <div class="project col-md-9 col-sm-9 col-xs-12 responsive-img" style="text-align:center; margin-top:20px;">
-      <button type="button" class="button is-checked" data-filter="">ALL</button>
+      <button type="button" class="button" data-filter=".ALL">ALL</button>
       <button type="button" class="button" data-filter=".university">University</button>
       <button type="button" class="button" data-filter=".activity">Activity</button>
       <button type="button" class="button" data-filter=".develop">Devlop</button>
       <button type="button" class="button" data-filter=".LikeLion-active">LikeLion</button>
       <div class="nak-gallery nlg1" id="gallery">
-          <span class="revGallery-anchor LikeLion-active develop activity">
+          <span class="revGallery-anchor LikeLion-active develop activity ALL">
               <img class="img-responsive img" src="image/likelion.png" style="width:100%;">
           </span>
-          <span class="revGallery-anchor activity develop">
+          <span class="revGallery-anchor activity develop ALL">
               <img class="img-responsive img" src="image/IBM.png" style="width:100%;">
           </span>
-          <span class="revGallery-anchor develop university">
+          <span class="revGallery-anchor develop university ALL">
               <img class="img-responsive img" src="image/Game-Dev.png" style="width:100%;">
           </span>
-          <span class="revGallery-anchor activity">
+          <span class="revGallery-anchor activity ALL">
               <img class="img-responsive img" src="image/blue-angel.jpg" style="width:100%;">
           </span>
-          <span class="revGallery-anchor activity">
+          <span class="revGallery-anchor activity ALL">
               <img class="img-responsive img" src="image/Country-walks.jpg" style="width:100%;">
           </span>
-          <span class="revGallery-anchor university develop">
+          <span class="revGallery-anchor university develop ALL">
               <img class="img-responsive img" src="image/DB.jpg" style="width:100%;">
           </span>
-          <span class="revGallery-anchor university develop">
+          <span class="revGallery-anchor university develop ALL">
               <img class="img-responsive img" src="image/OS.jpg" style="width:100%;">
           </span>
-          <span class="revGallery-anchor LikeLion-active develop">
+          <span class="revGallery-anchor LikeLion-active develop ALL">
               <img class="img-responsive img" src="image/self-intro.PNG" style="width:100%;">
           </span>
-          <span class="revGallery-anchor university develop">
+          <span class="revGallery-anchor university develop ALL">
               <img class="img-responsive img" src="image/Game-Dev2.png" style="width:100%;">
           </span>
-          <span class="revGallery-anchor LikeLion-active develop">
+          <span class="revGallery-anchor LikeLion-active develop ALL">
               <img class="img-responsive img" src="image/sutda.PNG" style="width:100%;">
           </span>
-          <span class="revGallery-anchor LikeLion-active develop">
+          <span class="revGallery-anchor LikeLion-active develop ALL">
               <img class="img-responsive img" src="image/idea-market.png" style="width:100%;">
           </span>
-          <span class="revGallery-anchor university develop">
+          <span class="revGallery-anchor university develop ALL">
               <img class="img-responsive img" src="image/SE.png" style="width:100%;">
           </span>
-          <span class="revGallery-anchor LikeLion-active develop">
+          <span class="revGallery-anchor LikeLion-active develop ALL">
               <img class="img-responsive img" src="image/fuse.png" style="width:100%;">
+          </span>
+          <span class="revGallery-anchor">
+            <img class="img-responsive" src="image/click_button.png" style="width:100%;">
           </span>
       </div>
     </div>
-
+</div>
 
         <!-- modal-->
         <div class="modal">
@@ -556,8 +569,22 @@
 <!-- /.container-fluid -->
 
 
+
 </body>
 </html>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
 <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
 <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script>

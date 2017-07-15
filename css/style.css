@@ -1,3 +1,142 @@
+#loader {
+  width: 100vw;
+	height: 100vh;
+	padding-top: 45vh;
+	margin: 0 auto;
+  background-color:#1f1f1f;
+}
+
+.ball {
+	width: 10px;
+	height: 10px;
+	margin: 10px auto;
+	border-radius: 50px;
+}
+
+.ball:nth-child(1) {
+	background: #2f2f2f;
+	-webkit-animation: right 1s infinite ease-in-out;
+	-moz-animation: right 1s infinite ease-in-out;
+	animation: right 1s infinite ease-in-out;
+}
+
+.ball:nth-child(2) {
+	background: #4f4f4f;
+	-webkit-animation: left 1s infinite ease-in-out;
+	-moz-animation: left 1s infinite ease-in-out;
+	animation: left 1s infinite ease-in-out;
+}
+
+.ball:nth-child(3) {
+	background: #6f6f6f;
+	-webkit-animation: right 1s infinite ease-in-out;
+	-moz-animation: right 1s infinite ease-in-out;
+	animation: right 1s infinite ease-in-out;
+}
+
+.ball:nth-child(4) {
+	background: #8f8f8f;
+	-webkit-animation: left 1s infinite ease-in-out;
+	-moz-animation: left 1s infinite ease-in-out;
+	animation: left 1s infinite ease-in-out;
+}
+
+.ball:nth-child(5) {
+	background: #bfbfbf;
+	-webkit-animation: right 1s infinite ease-in-out;
+	-moz-animation: right 1s infinite ease-in-out;
+	animation: right 1s infinite ease-in-out;
+}
+
+.ball:nth-child(6) {
+	background: #dfdfdf;
+	-webkit-animation: left 1s infinite ease-in-out;
+	-moz-animation: left 1s infinite ease-in-out;
+	animation: left 1s infinite ease-in-out;
+}
+
+.ball:nth-child(7) {
+	background: #ffffff;
+	-webkit-animation: right 1s infinite ease-in-out;
+	-moz-animation: right 1s infinite ease-in-out;
+	animation: right 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes right {
+	0% {
+		-webkit-transform: translate(-15px);
+	}
+	50% {
+		-webkit-transform: translate(15px);
+	}
+	100% {
+		-webkit-transform: translate(-15px);
+	}
+}
+
+@-webkit-keyframes left {
+	0% {
+		-webkit-transform: translate(15px);
+	}
+	50% {
+		-webkit-transform: translate(-15px);
+	}
+	100% {
+		-webkit-transform: translate(15px);
+	}
+}
+
+@-moz-keyframes right {
+	0% {
+		-moz-transform: translate(-15px);
+	}
+	50% {
+		-moz-transform: translate(15px);
+	}
+	100% {
+		-moz-transform: translate(-15px);
+	}
+}
+
+@-moz-keyframes left {
+	0% {
+		-moz-transform: translate(15px);
+	}
+	50% {
+		-moz-transform: translate(-15px);
+	}
+	100% {
+		-moz-transform: translate(15px);
+	}
+}
+
+@keyframes right {
+	0% {
+		transform: translate(-15px);
+	}
+	50% {
+		transform: translate(15px);
+	}
+	100% {
+		transform: translate(-15px);
+	}
+}
+
+@keyframes left {
+	0% {
+		transform: translate(15px);
+	}
+	50% {
+		transform: translate(-15px);
+	}
+	100% {
+		transform: translate(15px);
+	}
+}
+#myDiv {
+  display: none;
+}
+
 /* Header */
 .large-header {
   position: relative;
