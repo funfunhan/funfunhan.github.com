@@ -581,8 +581,8 @@ function myFunction() {
 }
 
 function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
+  $("#loader").fadeOut(1000);
+  $("#myDiv").fadeIn(2000);
 }
 </script>
 <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
