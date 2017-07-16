@@ -1,11 +1,14 @@
 #loader {
   width: 100vw;
 	height: 100vh;
-	padding-top: 45vh;
+	padding-top: 40vh;
 	margin: 0 auto;
   background-color:#1f1f1f;
+  text-align: center;
 }
-
+.myname{
+  margin-bottom: 10px;
+}
 .ball {
 	width: 10px;
 	height: 10px;
@@ -13,49 +16,49 @@
 	border-radius: 50px;
 }
 
-.ball:nth-child(1) {
+.ball:nth-child(2) {
 	background: #2f2f2f;
 	-webkit-animation: right 1s infinite ease-in-out;
 	-moz-animation: right 1s infinite ease-in-out;
 	animation: right 1s infinite ease-in-out;
 }
 
-.ball:nth-child(2) {
+.ball:nth-child(3) {
 	background: #4f4f4f;
 	-webkit-animation: left 1s infinite ease-in-out;
 	-moz-animation: left 1s infinite ease-in-out;
 	animation: left 1s infinite ease-in-out;
 }
 
-.ball:nth-child(3) {
+.ball:nth-child(4) {
 	background: #6f6f6f;
 	-webkit-animation: right 1s infinite ease-in-out;
 	-moz-animation: right 1s infinite ease-in-out;
 	animation: right 1s infinite ease-in-out;
 }
 
-.ball:nth-child(4) {
+.ball:nth-child(5) {
 	background: #8f8f8f;
 	-webkit-animation: left 1s infinite ease-in-out;
 	-moz-animation: left 1s infinite ease-in-out;
 	animation: left 1s infinite ease-in-out;
 }
 
-.ball:nth-child(5) {
+.ball:nth-child(6) {
 	background: #bfbfbf;
 	-webkit-animation: right 1s infinite ease-in-out;
 	-moz-animation: right 1s infinite ease-in-out;
 	animation: right 1s infinite ease-in-out;
 }
 
-.ball:nth-child(6) {
+.ball:nth-child(7) {
 	background: #dfdfdf;
 	-webkit-animation: left 1s infinite ease-in-out;
 	-moz-animation: left 1s infinite ease-in-out;
 	animation: left 1s infinite ease-in-out;
 }
 
-.ball:nth-child(7) {
+.ball:nth-child(8) {
 	background: #ffffff;
 	-webkit-animation: right 1s infinite ease-in-out;
 	-moz-animation: right 1s infinite ease-in-out;
