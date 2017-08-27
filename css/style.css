@@ -216,8 +216,7 @@ header[role="banner"] #logo-main {
   min-width: 15%;
   min-height: 30px;
   font-size: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin:5px;
 }
 .button:hover{
   color:white;
@@ -235,7 +234,7 @@ header[role="banner"] #logo-main {
 #portfolio{
 	position:relative;
   height:100%;
-	margin:0 auto 25px;
+	margin:20px auto 25px;
 	padding-bottom: 10px;
 
 }
