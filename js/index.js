@@ -1,19 +1,11 @@
 $(window).load( function() {
-		$('#portfolio').BlocksIt({
-			numOfCol: 4,
+    $('#portfolio').BlocksIt({
+			numOfCol: 2,
 			offsetX: 0,
 			offsetY: 5,
       blockElement:".grid"
 		});
-
-    var header_img = document.getElementsByClassName("headerimgholder");
-    var width = $(window).width() -55;
-    var howmany = (width/150 -1)*2;
-    for(var i=0; i<howmany; i++){
-      header_img[i].style.display = "inline-block";
-    }
 	});
-
 //window resize
 $(window).resize(function() {
   $('#portfolio').BlocksIt({

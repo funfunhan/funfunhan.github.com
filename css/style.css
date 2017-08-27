@@ -234,15 +234,14 @@ header[role="banner"] #logo-main {
 
 #portfolio{
 	position:relative;
-  min-width: 850px;
   height:100%;
 	margin:0 auto 25px;
 	padding-bottom: 10px;
 
 }
 .grid{
-	min-width:200px;
-	min-height:200px;
+	width:200px;
+	min-height:100px;
 	padding: 5px;
 	background:#fff;
 	margin:1px;
