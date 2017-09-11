@@ -15,11 +15,20 @@ $(window).resize(function() {
     blockElement:".grid"
   });
   var header_img = document.getElementsByClassName("headerimgholder");
+  var over_1500 = document.getElementById("over_1500");
   var width = $(window).width() -55;
   if (width > 1550){
     width = 1500;
+    over_1500.style.display = "block";
   }
+  else{
+    over_1500.style.display = "none";
+  }
+  console.log(width);
   var howmany = (width/150 -1)*2;
+  if(width == 1500){
+    howmany = 20;
+  }
   for(var j=0;j<header_img.length;j++){
     header_img[j].style.display = "none";
   }

@@ -58,6 +58,7 @@
     <div class="headerimgholder">
       <img src="img2/10.jpg" alt="">
     </div>
+    <br id="over_1500">
     <div class="headerimgholder">
       <img src="img2/11.jpg" alt="">
     </div>
@@ -685,11 +686,23 @@ function showPage() {
       blockElement:".grid"
     });
     var header_img = document.getElementsByClassName("headerimgholder");
+    var over_1500 = document.getElementById("over_1500");
     var width = $(window).width() -55;
+    if (width > 1550){
+      width = 1500;
+      over_1500.style.display = "block";
+    }
+    else{
+      over_1500.style.display = "none";
+    }
     var howmany = (width/150 -1)*2;
+    if(width == 1500){
+      howmany = 20;
+    }
     for(var i=0; i<howmany; i++){
       header_img[i].style.display = "inline-block";
     }
+
   };
 </script>
 <script src="js/index.js"></script>
