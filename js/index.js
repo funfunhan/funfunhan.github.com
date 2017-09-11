@@ -16,6 +16,9 @@ $(window).resize(function() {
   });
   var header_img = document.getElementsByClassName("headerimgholder");
   var width = $(window).width() -55;
+  if (width > 1550){
+    width = 1500;
+  }
   var howmany = (width/150 -1)*2;
   for(var j=0;j<header_img.length;j++){
     header_img[j].style.display = "none";
