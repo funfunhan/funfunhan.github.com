@@ -194,6 +194,7 @@ header[role="banner"] #logo-main {
 }
 
 .profile_img{
+  margin-top:15px;
   width:100%;
   height:auto;
   text-align: center;
